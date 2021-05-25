@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <!-- fuentes de google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+         <!-- fuentes de google fonts -->
+        <title>PekoPeko</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+
+
+    </head>
+    <body>
+        <p align= "center"><b>Bienvenido</b></p>
+        <p>Estas en la pagina<b> Pekora Para Todos</b>.</p><!-- comment-->
+
+        <p align= "center">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, tenetur? Error sapiente commodi quis delectus asperiores. Quidem adipisci quos sit ut perspiciatis earum blanditiis nobis magnam, ullam assumenda porro qui.
+        </p>
+        
+        <h1 class="resaltado">Click en la imagen de pekora para ir a la siguiente pagina</h1>
+        <a href="anime/peko.html"><img src="asset/pekora.png" alt="pekopeko" width="400"></a>
+        <img src="asset/coco cute.png" alt="cute" width="500" style="margin-bottom: 200px; margin-left: 150px;">
+
+        <h2>Listas </h2>
+        <!-- <ol> viene de las palabras ordered list
+        <     li> viene de las palabras list item -->
+
+        <ol>
+        <li>Alexande</li>
+        <li>Milagro</li>
+        <li>Kimberly</li>
+        </ol>
+
+     <!-- hola mundo -->
+
+        <!-- <ul> viene de las palabras unordered list
+        <li> viene de las palabras list item -->
+    
+        <ul>
+            <li>Kimberly</li>
+            <li>Alexander</li>
+            <li>Milagro</li>
+            
+        </ul>
+
+        <h2>listas anidadas</h2>
+        <ol>
+            <li>Kimberly
+                <ul>
+                    <li><a href="https://www.instagram.com/chaveskim/">Instagram</a></li>
+                </ul>
+                </li>
+            <li>Milagro
+                <ul>
+                    <li><a href="https://www.instagram.com/m.c.o_2001/">Instagram</a></li>
+                </ul>
+                </li>
+            <li>Alexander
+                    <ul>
+                        <li><a href="https://www.instagram.com/alexhb93/">Instagram</a></li>
+                    </ul>
+                </li>
+        </ol>
+    
+
+        <!-- para comentar se selecciona todo y se toca alt + shift + a-->
+        <!-- <dl> viene de definition list
+        <dt> viene de definition term
+        <dd> viene de definition description -->
+        <h2>Lista de definiciones </h2>    
+        <dl><dt>C++</dt>
+        <dd>Es un lenguaje de programacion dise;ado a mediados de los a;os 1980 por <strong>bjarne streustrup</strong> como extencion del lenguaje de programacionc.</dd>
+        </dl>
+
+
+
+        <h2>Tabla</h2>
+
+        <table border ="1">
+            <!-- <caption> significa título. -->
+            <caption>Goddesses vtubers 2021</caption>
+
+            <!-- <th> viene de table header cell que significa celda de encabezado de tabla. -->
+            <tr>
+                <th>Vtuber</th><th>Subscribers</th>
+            </tr>
+
+            <!-- <tr> viene de table row que significa fila de la tabla. -->
+            <tr>
+              <td><a href="https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q"><strong>Korone</strong></a></td><td>1.51 M</td>
+            </tr>
+
+            <tr>
+             <!-- <td> viene de table data que significa dato de la tabla. -->
+              <td><a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ"><strong>Pekora</strong</a></td><td>1.47 M</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w"><strong>Coco</strong></a></td><td>1.13 M</td>
+            </tr>
+          </table>
+
+        <h1><strong>input type ="button"</strong></h1>
+        
+        <form action="registroDatos.php" method="post">
+        <h2>Resultado</h2>
+        <input type="button" name="boton7" value="7">
+        <input type="button" name="boton8" value="8">
+        <input type="button" name="boton9" value="9">
+        <input type="button" name="botondiv" value="/">
+        <br>
+        <input type="button" name="boton4" value="4">
+        <input type="button" name="boton5" value="5">
+        <input type="button" name="boton6" value="6">
+        <input type="button" name="botondiv" value="*">
+        <br>
+        <input type="button" name="boton1" value="1">
+        <input type="button" name="boton2" value="2">
+        <input type="button" name="boton3" value="3">
+        <input type="button" name="botondiv" value="+">
+        <br>
+        <input type="button" name="boton0" value="0">
+        <input type="button" name="botonigual" value="=">
+        <input type="button" name="botonmenos" value="-">
+        </form>
+
+        <h1 ><strong>input type ="file"</strong></h1>
+        <form action="registrarDatos.php" method="post" enctype="multipart/form-data">
+            Ingrese Su Nombre:
+            <input type="text" name="Nombre" size="20"> <br>
+            Ingrese Su Foto De Perfil:
+            <input type="file" name="foto"> <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <br><br>
+
+        <h1><strong>input type ="hidden"</strong></h1>
+
+        <form action="registrarDatos.php" method="post">
+            <input type="hidden" value="10:20" name="hora">
+            Ingrese su nombre:
+            <input type="text" name="nombre" size="20"> <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+    </body>
+</html>

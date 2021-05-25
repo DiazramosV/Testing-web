@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva la coco</title>
+    <link rel="stylesheet" href="../../css/main.css" type="text/css" >
+
+
+    <!-- Dar doble click en la palabra +Ctrl + D para controlar varios punteros a la vez asi si 
+        cambio el nombre se cambiara en todas las variables con el mismo nombre -->
+        
+    <style type="text/css">
+    h1.mycenter{text-align:center}
+    </style>
+
+</head>
+<body>
+
+ <h1 class="mycenter"><strong>Juan</strong></h1>
+
+
+ <div style="display: flex;">
+    <h1 style="text-align: center; min-width: 50%;"><strong>Buenos Dias De Putas</strong></h1>
+    <h1 style="text-align: center; min-width:50%;">corto del debut 3D</h1>
+
+ </div>
+
+
+
+<a href="../peko.html"><img src="asset/Coco.png" alt="Kiryu" width="600"></a>
+<img src="asset/kiryu.gif" alt="coco" width="600" style="margin-bottom: 250px; margin-left: 30px;" >
+
+
+<h2>Agrupamiento de controles</h2>
+<!--   fieldset= conjunto de campos -->
+<form action="registrarDatos.php" method="post">
+<fieldset>
+    <legend>Datos personales</legend>
+    Apellido y Nombre:
+    <input type="text" name="nombre" size="30"><br>
+    Documentos de indentidad:
+    <input type="text" name="DNI" size="20"> <br>
+    Fecha de nacimiento:
+    <input type="text" name="fechanacimiento" size="20"> <br>
+    Direccion:
+    <input type="text" name="direccion" size="50">  
+</fieldset>
+ <fieldset>
+    <legend>Datos laborales</legend> 
+    Nombre de la empresa:
+    <input type="text" name="empressa" size="30"> <br>
+    Actividad:
+    <input type="text" name="actividad" size="30"> <br>
+    Direccion:
+    <input type="text" name="direcEmpresa" size="50">
+</fieldset>
+
+<button type="submit">Enviar <img src="asset/Juan.ico" alt="Juan"></button>
+</form>
+
+<h2>Controles con valores iniciales,Inhabilitar controles y readonly </h2>
+<form action="registrarDatos" method="post">
+    Apellido y Nombre:
+    <input type="text" name="nombre" size="30"> <br>
+    Es mayor de edad? <br>
+    <input type="radio" name="radio1" value="inhabilitado" disabled>Inhabilitado <br>  
+    <input type="radio" name="radio1" value="Si">Si <br>
+    <input type="radio" name="radio1" value="No">No <br>
+
+    Telefono:
+    <input type="text" name="telefono" value="855-" size="15"> <br>
+    <textarea name="comentarios"cols="40" rows="5" readonly>These comments can't be delete.....</textarea> <br>
+    <button type="submit">Enviar </button>
+</form>
+
+<h2>orden de foco de controles</h2>
+<!-- Todos los controles de formulario pueden definir una propiedad llamada tabindex que es un valor entero entre 0 y 32767. 
+Este número indica el orden en que los controles toman foco. Cuando se presiona la tecla tab el navegador pasa el foco al siguiente control.
+
+Para probar el funcionamiento implementaremos un formulario que contenga una matriz de tres filas y tres columnas de elementos de tipo text.
+Haremos que el foco sea por columna, es decir primero tomará foco el text de la primer fila y primer columna, luego del text de la segunda 
+fila y primer columna etc.(si no definimos la propiedad tabindex la carga de datos se efectua por fila): -->
+
+<form action="registrardatos.php" method="post">
+    <input type="text" name="text1" size="5" tabindex="1">
+    <input type="text" name="text2" size="5" tabindex="4">
+    <input type="text" name="text3" size="5" tabindex="7">
+    <br>
+    <input type="text" name="text4" size="5" tabindex="2">
+    <input type="text" name="text5" size="5" tabindex="5">
+    <input type="text" name="text6" size="5" tabindex="8">
+    <br>
+    <input type="text" name="text7" size="5" tabindex="3">
+    <input type="text" name="text8" size="5" tabindex="6">
+    <input type="text" name="text9" size="5" tabindex="9">
+    <br>
+    <input type="submit" value="enviar" tabindex="10">
+  </form>
+
+
+  <h2>Envío de datos mediante mail y Label</h2>
+  <h3>Reclamos</h3>
+  <form action="mailto:smokahontas219@gmail.com"  method="post" enctype="text/plain" >
+    <label for="Nombre">Ingrese su Nombre:</label>
+    <input type="text" name="nombre" size="20" id="Nombre"><br>
+
+    <label for="Email">Ingrese su Email:</label> 
+    <input type="text" name="Email" size="30" id="Email"><br><br>
+
+    <label for="problema">Informe del problema:</label><br>
+    <textarea rows="5" cols="40" name="problema" id="problema"></textarea><br>
+
+    <input type="submit" value="enviar">
+  </form>
+
+  <h2> iframe sin borde</h2>
+<iframe src="../peko.html" frameborder="0" width="610" height="200"  ></iframe>
+<iframe src="../../index.html" frameborder="1" width="610" height="200" ></iframe> 
+<br><br><br>
+
+
+<h2>Validación de la página a través de un enlace</h2>
+<p><strong>pagina oficial de Kiryu Coco</strong></p>
+<a href="https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w">
+    <img src="https://yt3.ggpht.com/ytc/AAUvwniAjGmotDDxZK7psIMoRbqhY7Ici621OQrO7fB9Wg=s88-c-k-c0x00ffffff-no-rj"
+     alt="Valid HTML 4.01 Strict" height="70" width="70">
+</a>
+ <br> <br>
+
+<h2>Elemento HTML pre</h2>
+<pre>
+    select * from editoriales
+    left join libros
+    on editoriales.codigo=libros.codigoeditorial;
+</pre>
+
+
+</body>
+</html>

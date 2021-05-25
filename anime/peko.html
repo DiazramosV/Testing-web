@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pekora assassin's creed</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+<body>
+<h1>playlist</h1>
+<a href="https://www.youtube.com/watch?v=y7ZcV9mdvtA&list=PLSeHPgJcfC6KIKf4xcpbiUBgE18-weywd&index=4">Music
+</a>
+
+<h1>Animeflv</h1>
+<a href="https://www3.animeflv.net/">Full Anime
+</a>
+
+<h2 >Click en la imagen de pekora para la pagina anterior</h2>
+<h2 style="margin-top: -45px; text-align: right;" >Click en la imagen de korone para ir a la siguiente pagina</h2>
+
+<!-- "../ sirve para retrocedernos una carpeta-->
+<a href="../Index.html"><img src="asset/b8d.png" alt="pekora" width="500"  ></a> 
+
+<a href="Kiryu/Kiryu.html"><img src="asset/Korone.png" alt="koro" width="500" style="margin-left: 240px" ></a>
+
+
+
+<table border="1">
+<tr>
+  <td rowspan="4">Recursos</td><td colspan="4">Facturación de los últimos tres meses</td>
+</tr>
+
+<tr>
+  <td>Discos Duros</td><td>23000</td><td>27200</td><td>26000</td>
+</tr>
+
+<tr>
+  <td>CPU</td><td>73000</td><td>67300</td><td>51000</td>
+</tr>
+
+<tr>
+  <td>Monitores</td><td>53000</td><td>72000</td><td>88000</td>
+</tr>
+
+</table>
+<br>
+
+<h2><strong>Formularios text / password y maxlength </strong></h2>
+<form action="RegistrarDatos.php" method="post">
+  ingrese su Nickname de maximo 15 caracteres:
+  <input type="text "name="nombre" size="20" maxlength="">
+  <br>
+  Ingrese su Password:
+  <input type="password" name="clave" size="12">
+  <br>
+  ingrese su Email:
+  <input type="text" name="mail" size="30">
+  <br>
+  <br>
+  <h2> input type="checkbox"</h2>
+  seleccione los campeones que conoce: <br>
+  <input type="checkbox" name="kayle">kayle <br>
+  <input type="checkbox" name="Renegueton">Renegueton <br>
+  <input type="checkbox" name="Ahri">Ahri <br>
+  <input type="checkbox" name="Ashe">Ashe <br> <br>
+  <h2> input type="radio"</h2>
+  seleccione el campeon que mejor sabe utilizar: <br>
+  <input type="radio" name="mejor" value="1">kayle <br>
+  <input type="radio" name="mejor" value="2">Renegueton <br>
+  <input type="radio" name="mejor" value="3"> Ahri <br>
+  <input type="radio" name="mejor" value="4">Ashe <br> <br>
+
+
+  <h2><strong>Cuadro de seleccion individual</strong></h2>  
+  seleccione su mejor linea: <br>
+  <select name="linea">
+    <option value="1">Top</option>
+    <option value="2">Mid</option>
+    <option value="3">ADC</option>
+    <option value="4">Suport</option>
+    <option value="5">Jungla</option>
+  </select>
+  <br> <br>
+
+  <h2><strong>cuadro de seleccion multiple</strong></h2>
+  <form action="registrarDatos.php" method="post"></form>
+    seleccione uno o varios campeones(Presiones Ctrl para seleccionar varios campeones) <br>
+      <select name="colores[]" size="8" multiple>
+      <option value="1">kayle</option>
+      <option value="2">Pyke</option>
+      <option value="3">Renegueton</option>
+      <option value="4">Ahri</option>
+      <option value="5">Ashe</option>
+      <option value="6">Yone</option>
+      <option value="7">Kindred</option>
+      <option value="8">Warwick</option>
+    </select> <br><br>
+
+
+  <h2><strong>Formulario(agrupaminto de opciones)</strong></h2>
+  <form action="registrarDatos.php" method="post">
+    selecciones uno o varios campeones:
+    <select name="articulo">
+      <optgroup label="Top"> 
+        <option value="1">Mordekaiser</option>
+        <option value="2">Kayle</option>
+        <option value="3">Renegueton</option>
+        <option value="4">Nasus</option>
+        <option value="5">Darius</option>
+
+        <!-- option group -->
+      </optgroup>
+      <optgroup label="ADC">
+        <option value="1">Ashe</option>
+        <option value="2">caitlyn</option>
+        <option value="3">Jinx</option>
+        <option value="4">Jhin</option>
+        <option value="5">Tristana</option>
+      </optgroup>
+    </select>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  comentarios: <br>
+  <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+  <br>
+  <input type="submit" value="Enviar"> 
+  <button type="submit">Enviar<img src="asset/b8d.png" alt="envio" width="50"></button> <br> <br>
+  <input type="reset" value="borrar"> 
+  <button type="reset">borrar <img src="asset/Korone.png" alt="Borrado" width="50"></button>
+</form>
+</body>
+</html>
+
