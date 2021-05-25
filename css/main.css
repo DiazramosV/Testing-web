@@ -18,3 +18,10 @@ p {
   background-color:#44bce0;
   font-style:italic;
 }
+/* Propiedades relacionadas al borde de un elemento HTML (border-width, border-style, border-color) */
+.pregunta{
+  background-color: lightblue;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+}
