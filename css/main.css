@@ -4,13 +4,14 @@ body {
 }
 
 .imageBody{
-  background-image:url("../asset/watame.jpg");
+  background-image:url("../asset/watame.png");
   background-repeat:no-repeat;
   /* background-repeat:repeat-x; */
   /* background-repeat:repeat-y; */
-  background-position: 0% 55%;
+  background-position: 7% 52%;
   /* background-position: 400px  30px; */
   /* background-position: center left; */
+  background-size: 16%;
 }
 
 
